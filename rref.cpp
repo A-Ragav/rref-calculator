@@ -9,7 +9,7 @@ int main() {
     cin >> numRows;
     cout << "Enter no. of columns: ";
     cin >> numCols;
-    cout<<"Enter Matrix";
+    cout<<"Enter Matrix\n";
 
     vector<vector<double>> matrix(numRows, vector<double>(numCols));
 
