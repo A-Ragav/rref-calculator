@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
+#include <cmath>
 using namespace std;
 
 int main() {
@@ -63,7 +64,12 @@ int main() {
 
     for (int row = 0; row < numRows; row++) {
         for (int col = 0; col < numCols; col++) {
-            cout << matrix[row][col] << " ";
+            if(fabs(matrix[row][col])<1e-9){
+                cout << 0 << " ";
+            }
+            else{
+                cout << matrix[row][col] << " ";
+            }
         }
         cout << "\n";
     }
